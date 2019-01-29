@@ -3,7 +3,7 @@ def my_select(collection)
   ary = []
   while i < collection.length
     if  ary << yield(collection[i]) == true
-      return collection[i]
+      collection[i]
     else
       nil
     end
