@@ -5,7 +5,7 @@ def my_select(collection)
     if  ary << yield(collection[i]) == true
       collection[i]
     else
-      nil
+      collection.pop
     end
   i += 1
   end
